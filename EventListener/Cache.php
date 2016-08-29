@@ -13,11 +13,10 @@ namespace TheliaCachePolyfill\EventListener;
 
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\Filesystem\Filesystem;
 use Thelia\Core\Event\Cache\CacheEvent;
 use Thelia\Core\Event\TheliaEvents;
 
-class Cache extends BaseAction implements EventSubscriberInterface
+class Cache implements EventSubscriberInterface
 {
     /** @var AdapterInterface */
     protected $adapter;

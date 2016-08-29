@@ -10,11 +10,11 @@
             <argument>600</argument>
             <argument>%kernel.cache_dir%</argument>
         </service>
-        <service id="thelia.cache.action.cache" class="TheliaCache\EventListener">
+        <service id="thelia.cache.action.cache" class="TheliaCachePolyfill\EventListener\Cache">
             <argument type="service" id="thelia.cache"/>
             <tag name="kernel.event_subscriber"/>
         </service>
-        <service id="smarty.plugin.cache" class="TheliaSmarty\Template\Plugins\Cache">
+        <service id="smarty.plugin.cache" class="TheliaCachePolyfill\Plugin\Smarty\Cache">
             <argument type="service" id="thelia.cache"/>
             <argument type="service" id="request_stack"/>
             <argument>%kernel.debug%</argument>
