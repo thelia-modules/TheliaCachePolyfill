@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="http://thelia.net/schema/dic/module"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://thelia.net/schema/dic/module http://thelia.net/schema/dic/module/module-2_2.xsd">
+    <fullnamespace>TheliaCachePolyfill\TheliaCachePolyfill</fullnamespace>
+    <descriptive locale="en_US">
+        <title>This Polyfill add the service "thelia.cache" and the smarty plugin "cache"</title>
+    </descriptive>
+    <languages>
+        <language>en_US</language>
+    </languages>
+    <version>1.0.0</version>
+    <authors>
+        <author>
+            <name>Gilles Bourgeat</name>
+            <email>gbourgeat@openstudio.fr</email>
+        </author>
+    </authors>
+    <type>classic</type>
+    <thelia>2.0.0</thelia>
+    <stability>beta</stability>
+</module>

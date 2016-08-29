@@ -1,0 +1,12 @@
+{
+  "name": "thelia/thelia-cache-polyfill-module",
+  "license": "LGPL-3.0+",
+  "type": "thelia-module",
+  "require": {
+    "thelia/installer": "~1.1",
+    "symfony/cache": "~3.1.0"
+  },
+  "extra": {
+    "installer-name": "TheliaCachePolyfill"
+  }
+}
