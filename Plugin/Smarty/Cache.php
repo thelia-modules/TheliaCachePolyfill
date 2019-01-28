@@ -40,14 +40,14 @@ class Cache extends AbstractSmartyPlugin
     /** @var TaxEngine */
     protected $taxEngine;
 
-
     /**
      * Cache constructor.
      * @param AdapterInterface $esiFragmentRenderer
      * @param RequestStack $requestStack
-     * @param bool $debug
+     * @param TaxEngine $taxEngine
+     * @param $debug
      */
-    public function __construct(AdapterInterface $esiFragmentRenderer, RequestStack $requestStack, $debug, TaxEngine $taxEngine)
+    public function __construct(AdapterInterface $esiFragmentRenderer, RequestStack $requestStack, TaxEngine $taxEngine, $debug)
     {
         $this->adapter = $esiFragmentRenderer;
         $this->requestStack = $requestStack;
